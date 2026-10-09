@@ -2118,7 +2118,9 @@
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         padding: clamp(1.5rem, 4vw, 3rem);
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(124, 58, 237, 0.15);
+        box-shadow:
+          0 20px 50px rgba(0, 0, 0, 0.6),
+          0 0 30px rgba(124, 58, 237, 0.15);
         position: relative;
         overflow: hidden;
         text-align: left;
@@ -2132,7 +2134,12 @@
         left: 0;
         right: 0;
         height: 2px;
-        background: linear-gradient(90deg, var(--neon-cyan), var(--electric-violet), var(--hot-magenta));
+        background: linear-gradient(
+          90deg,
+          var(--neon-cyan),
+          var(--electric-violet),
+          var(--hot-magenta)
+        );
       }
 
       .step-progress-bar {
@@ -2204,8 +2211,14 @@
       }
 
       @keyframes fadeInStep {
-        from { opacity: 0; transform: translateY(8px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .form-grid-2col {
@@ -2413,7 +2426,9 @@
 
       .btn-submit-cyber:hover:not(:disabled) {
         transform: translateY(-2px);
-        box-shadow: 0 0 30px var(--electric-violet-glow), 0 0 15px var(--neon-cyan-glow);
+        box-shadow:
+          0 0 30px var(--electric-violet-glow),
+          0 0 15px var(--neon-cyan-glow);
       }
 
       .btn-submit-cyber:disabled {
@@ -2444,7 +2459,9 @@
       }
 
       @keyframes spin {
-        to { transform: rotate(360deg); }
+        to {
+          transform: rotate(360deg);
+        }
       }
 
       .form-alert-box {
@@ -2491,7 +2508,9 @@
         background: rgba(13, 19, 44, 0.95);
         border: 1px solid var(--neon-cyan);
         border-radius: 20px;
-        box-shadow: 0 0 40px rgba(34, 211, 238, 0.35), 0 25px 60px rgba(0, 0, 0, 0.8);
+        box-shadow:
+          0 0 40px rgba(34, 211, 238, 0.35),
+          0 25px 60px rgba(0, 0, 0, 0.8);
         padding: clamp(1.8rem, 4vw, 3rem);
         max-width: 580px;
         width: 100%;
@@ -4522,33 +4541,88 @@
               <span>DATATHON REGISTRATION PROTOCOL // 2026</span>
             </div>
 
-            <h3 class="portal-heading" style="text-align:center;">Official Team Registration</h3>
-            <p class="portal-desc" style="text-align:center;">
-              Complete the verified team registration below. Only one submission per team is required.
+            <h3 class="portal-heading" style="text-align: center">
+              Official Team Registration
+            </h3>
+            <p class="portal-desc" style="text-align: center">
+              Complete the verified team registration below. Only one submission
+              per team is required.
             </p>
 
             <div class="portal-perks-row">
               <div class="portal-perk-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#22D3EE"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
                 <span>100% Free Entry</span>
               </div>
               <div class="portal-perk-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#22D3EE"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
                 <span>Teams of 2 to 4</span>
               </div>
               <div class="portal-perk-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#22D3EE"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
                 <span>Instant Confirmation</span>
               </div>
             </div>
 
             <!-- Error Notification Banner -->
-            <div class="form-alert-box alert-error" id="regErrorBanner" role="alert">
-              <div style="display:flex; align-items:center; gap:0.6rem;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                <span id="regErrorMessage">Registration failed. Please check your details and try again.</span>
+            <div
+              class="form-alert-box alert-error"
+              id="regErrorBanner"
+              role="alert"
+            >
+              <div style="display: flex; align-items: center; gap: 0.6rem">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+                <span id="regErrorMessage"
+                  >Registration failed. Please check your details and try
+                  again.</span
+                >
               </div>
-              <button type="button" class="btn-copy-id" id="dismissAlertBtn" style="margin:0; padding:0.3rem 0.6rem;">Dismiss</button>
+              <button
+                type="button"
+                class="btn-copy-id"
+                id="dismissAlertBtn"
+                style="margin: 0; padding: 0.3rem 0.6rem"
+              >
+                Dismiss
+              </button>
             </div>
 
             <!-- Step Progress Indicator -->
@@ -4565,129 +4639,364 @@
 
             <form id="eventRegForm" novalidate autocomplete="off">
               <!-- Hidden Honeypot Field for Bot Prevention -->
-              <input type="text" name="website_source_hp" id="regHoneypot" style="display:none!important;" tabindex="-1" autocomplete="off" />
+              <input
+                type="text"
+                name="website_source_hp"
+                id="regHoneypot"
+                style="display: none !important"
+                tabindex="-1"
+                autocomplete="off"
+              />
 
               <!-- STEP 1: TEAM & LEADER DETAILS -->
               <div class="form-step-panel active" id="formStep1">
                 <div class="form-group">
                   <label class="form-label" for="teamName">
                     <span>Team Name <span class="req">*</span></span>
-                    <span class="text-dim" style="font-size:0.75rem; font-family:var(--font-mono);">2–60 chars</span>
+                    <span
+                      class="text-dim"
+                      style="font-size: 0.75rem; font-family: var(--font-mono)"
+                      >2–60 chars</span
+                    >
                   </label>
-                  <input type="text" class="form-input" id="teamName" name="teamName" placeholder="e.g. Data Titans" required maxlength="60" />
-                  <div class="error-hint" id="err-teamName">Please enter a team name (at least 2 characters).</div>
+                  <input
+                    type="text"
+                    class="form-input"
+                    id="teamName"
+                    name="teamName"
+                    placeholder="e.g. Data Titans"
+                    required
+                    maxlength="60"
+                  />
+                  <div class="error-hint" id="err-teamName">
+                    Please enter a team name (at least 2 characters).
+                  </div>
                 </div>
 
                 <div class="form-grid-2col">
                   <!-- Course Selector -->
                   <div class="form-group">
-                    <label class="form-label">Course <span class="req">*</span></label>
+                    <label class="form-label"
+                      >Course <span class="req">*</span></label
+                    >
                     <div class="chips-row" id="courseChips">
-                      <button type="button" class="chip-btn" data-value="BCA">BCA</button>
-                      <button type="button" class="chip-btn" data-value="MCA">MCA</button>
-                      <button type="button" class="chip-btn" data-value="BBA">BBA</button>
-                      <button type="button" class="chip-btn" data-value="BCOM">BCOM</button>
-                      <button type="button" class="chip-btn" data-value="MBA">MBA</button>
-                      <button type="button" class="chip-btn" data-value="BBA AVIATION">BBA AVIATION</button>
+                      <button type="button" class="chip-btn" data-value="BCA">
+                        BCA
+                      </button>
+                      <button type="button" class="chip-btn" data-value="MCA">
+                        MCA
+                      </button>
+                      <button type="button" class="chip-btn" data-value="BBA">
+                        BBA
+                      </button>
+                      <button type="button" class="chip-btn" data-value="BCOM">
+                        BCOM
+                      </button>
+                      <button type="button" class="chip-btn" data-value="MBA">
+                        MBA
+                      </button>
+                      <button
+                        type="button"
+                        class="chip-btn"
+                        data-value="BBA AVIATION"
+                      >
+                        BBA AVIATION
+                      </button>
                     </div>
-                    <input type="hidden" id="selectedCourse" name="course" required />
-                    <div class="error-hint" id="err-course">Please select a course from the options.</div>
+                    <input
+                      type="hidden"
+                      id="selectedCourse"
+                      name="course"
+                      required
+                    />
+                    <div class="error-hint" id="err-course">
+                      Please select a course from the options.
+                    </div>
                   </div>
 
                   <!-- Year Selector -->
                   <div class="form-group">
-                    <label class="form-label">Year of Study <span class="req">*</span></label>
+                    <label class="form-label"
+                      >Year of Study <span class="req">*</span></label
+                    >
                     <div class="chips-row" id="yearChips">
-                      <button type="button" class="chip-btn" data-value="1st year">1st year</button>
-                      <button type="button" class="chip-btn" data-value="2nd year">2nd year</button>
-                      <button type="button" class="chip-btn" data-value="3rd year">3rd year</button>
+                      <button
+                        type="button"
+                        class="chip-btn"
+                        data-value="1st year"
+                      >
+                        1st year
+                      </button>
+                      <button
+                        type="button"
+                        class="chip-btn"
+                        data-value="2nd year"
+                      >
+                        2nd year
+                      </button>
+                      <button
+                        type="button"
+                        class="chip-btn"
+                        data-value="3rd year"
+                      >
+                        3rd year
+                      </button>
                     </div>
-                    <input type="hidden" id="selectedYear" name="year" required />
-                    <div class="error-hint" id="err-year">Please select your year of study.</div>
+                    <input
+                      type="hidden"
+                      id="selectedYear"
+                      name="year"
+                      required
+                    />
+                    <div class="error-hint" id="err-year">
+                      Please select your year of study.
+                    </div>
                   </div>
                 </div>
 
                 <!-- Team Size Selector -->
-                <div class="form-group" style="margin-top: 0.5rem;">
-                  <label class="form-label">Team Size <span class="req">*</span> <span style="font-weight:400; font-size:0.8rem; color:var(--text-muted);">(including leader: 2, 3, or 4 students)</span></label>
+                <div class="form-group" style="margin-top: 0.5rem">
+                  <label class="form-label"
+                    >Team Size <span class="req">*</span>
+                    <span
+                      style="
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        color: var(--text-muted);
+                      "
+                      >(including leader: 2, 3, or 4 students)</span
+                    ></label
+                  >
                   <div class="chips-row" id="teamSizeChips">
-                    <button type="button" class="chip-btn selected" data-value="2">2 Students (Leader + 1)</button>
-                    <button type="button" class="chip-btn" data-value="3">3 Students (Leader + 2)</button>
-                    <button type="button" class="chip-btn" data-value="4">4 Students (Leader + 3)</button>
+                    <button
+                      type="button"
+                      class="chip-btn selected"
+                      data-value="2"
+                    >
+                      2 Students (Leader + 1)
+                    </button>
+                    <button type="button" class="chip-btn" data-value="3">
+                      3 Students (Leader + 2)
+                    </button>
+                    <button type="button" class="chip-btn" data-value="4">
+                      4 Students (Leader + 3)
+                    </button>
                   </div>
-                  <input type="hidden" id="selectedTeamSize" name="teamSize" value="2" required />
-                  <div class="error-hint" id="err-teamSize">Please select team size.</div>
+                  <input
+                    type="hidden"
+                    id="selectedTeamSize"
+                    name="teamSize"
+                    value="2"
+                    required
+                  />
+                  <div class="error-hint" id="err-teamSize">
+                    Please select team size.
+                  </div>
                 </div>
 
-                <div style="margin: 2rem 0 1.25rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.25rem;">
-                  <h4 style="font-family:var(--font-display); font-size:1.05rem; color:var(--neon-cyan); margin-bottom: 0.4rem;">
+                <div
+                  style="
+                    margin: 2rem 0 1.25rem;
+                    border-top: 1px solid rgba(255, 255, 255, 0.08);
+                    padding-top: 1.25rem;
+                  "
+                >
+                  <h4
+                    style="
+                      font-family: var(--font-display);
+                      font-size: 1.05rem;
+                      color: var(--neon-cyan);
+                      margin-bottom: 0.4rem;
+                    "
+                  >
                     Team Leader Information
                   </h4>
-                  <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom: 1.2rem;">
-                    Primary contact point for competition rounds, schedules, and official notices.
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                      margin-bottom: 1.2rem;
+                    "
+                  >
+                    Primary contact point for competition rounds, schedules, and
+                    official notices.
                   </p>
                 </div>
 
                 <div class="form-grid-2col">
                   <div class="form-group">
-                    <label class="form-label" for="leaderName">Leader Full Name <span class="req">*</span></label>
-                    <input type="text" class="form-input" id="leaderName" name="leaderName" placeholder="Full name as per college record" required maxlength="80" />
-                    <div class="error-hint" id="err-leaderName">Please enter team leader's full name.</div>
+                    <label class="form-label" for="leaderName"
+                      >Leader Full Name <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-input"
+                      id="leaderName"
+                      name="leaderName"
+                      placeholder="Full name as per college record"
+                      required
+                      maxlength="80"
+                    />
+                    <div class="error-hint" id="err-leaderName">
+                      Please enter team leader's full name.
+                    </div>
                   </div>
 
                   <div class="form-group">
-                    <label class="form-label" for="leaderRegNo">Uucms number <span class="req">*</span></label>
-                    <input type="text" class="form-input" id="leaderRegNo" name="leaderRegNo" placeholder="Uucms number" required maxlength="40" />
-                    <div class="error-hint" id="err-leaderRegNo">Please enter team leader's Uucms number.</div>
+                    <label class="form-label" for="leaderRegNo"
+                      >Uucms number <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-input"
+                      id="leaderRegNo"
+                      name="leaderRegNo"
+                      placeholder="Enter Uucms number"
+                      required
+                      maxlength="40"
+                    />
+                    <div class="error-hint" id="err-leaderRegNo">
+                      Please enter team leader's Uucms number.
+                    </div>
                   </div>
                 </div>
 
                 <div class="form-grid-2col">
                   <div class="form-group">
-                    <label class="form-label" for="leaderEmail">Leader Official Email <span class="req">*</span></label>
-                    <input type="email" class="form-input" id="leaderEmail" name="leaderEmail" placeholder="student@college.edu or email@domain.com" required maxlength="80" />
-                    <div class="error-hint" id="err-leaderEmail">Please provide a valid email address.</div>
+                    <label class="form-label" for="leaderEmail"
+                      >Leader Official Email <span class="req">*</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-input"
+                      id="leaderEmail"
+                      name="leaderEmail"
+                      placeholder="student@college.edu or email@domain.com"
+                      required
+                      maxlength="80"
+                    />
+                    <div class="error-hint" id="err-leaderEmail">
+                      Please provide a valid email address.
+                    </div>
                   </div>
 
                   <div class="form-group">
-                    <label class="form-label" for="leaderPhone">Leader Phone Number <span class="req">*</span></label>
-                    <input type="tel" class="form-input" id="leaderPhone" name="leaderPhone" placeholder="10-digit mobile number (e.g. 9876543210)" required maxlength="15" />
-                    <div class="error-hint" id="err-leaderPhone">Please enter a valid 10-digit Indian phone number (starting with 6-9).</div>
+                    <label class="form-label" for="leaderPhone"
+                      >Leader Phone Number <span class="req">*</span></label
+                    >
+                    <input
+                      type="tel"
+                      class="form-input"
+                      id="leaderPhone"
+                      name="leaderPhone"
+                      placeholder="10-digit mobile number (e.g. 9876543210)"
+                      required
+                      maxlength="15"
+                    />
+                    <div class="error-hint" id="err-leaderPhone">
+                      Please enter a valid 10-digit Indian phone number
+                      (starting with 6-9).
+                    </div>
                   </div>
                 </div>
 
-                <div class="form-actions-row" style="justify-content: flex-end;">
-                  <button type="button" class="btn-submit-cyber" id="btnNextStep">
+                <div class="form-actions-row" style="justify-content: flex-end">
+                  <button
+                    type="button"
+                    class="btn-submit-cyber"
+                    id="btnNextStep"
+                  >
                     <span class="btn-text-content">Next: Teammate Details</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
                   </button>
                 </div>
               </div>
 
               <!-- STEP 2: TEAM MEMBERS DETAILS -->
               <div class="form-step-panel" id="formStep2">
-                <div style="background:rgba(34, 211, 238, 0.08); border:1px solid var(--border-cyan); border-radius:10px; padding:0.9rem 1.2rem; margin-bottom:1.5rem;">
-                  <p style="color:#e2e8f0; font-size:0.88rem; margin:0; line-height: 1.5;">
-                    Enter the other team members' details below. <strong style="color:var(--neon-cyan);">Do not enter the team leader again.</strong>
+                <div
+                  style="
+                    background: rgba(34, 211, 238, 0.08);
+                    border: 1px solid var(--border-cyan);
+                    border-radius: 10px;
+                    padding: 0.9rem 1.2rem;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  <p
+                    style="
+                      color: #e2e8f0;
+                      font-size: 0.88rem;
+                      margin: 0;
+                      line-height: 1.5;
+                    "
+                  >
+                    Enter the other team members' details below.
+                    <strong style="color: var(--neon-cyan)"
+                      >Do not enter the team leader again.</strong
+                    >
                   </p>
                 </div>
 
                 <!-- Member 2 (Always required) -->
                 <div class="member-subcard" id="cardMember2">
                   <div class="member-card-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                    </svg>
                     <span>Team Member 2</span>
                   </div>
                   <div class="form-grid-2col">
                     <div class="form-group">
-                      <label class="form-label" for="member2Name">Full Name <span class="req">*</span></label>
-                      <input type="text" class="form-input" id="member2Name" name="member2Name" placeholder="Full Name" required maxlength="80" />
-                      <div class="error-hint" id="err-member2Name">Member 2 full name is required.</div>
+                      <label class="form-label" for="member2Name"
+                        >Full Name <span class="req">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="member2Name"
+                        name="member2Name"
+                        placeholder="Full Name"
+                        required
+                        maxlength="80"
+                      />
+                      <div class="error-hint" id="err-member2Name">
+                        Member 2 full name is required.
+                      </div>
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="member2RegNo">Uucms number <span class="req">*</span></label>
-                      <input type="text" class="form-input" id="member2RegNo" name="member2RegNo" placeholder="Uucms number" required maxlength="40" />
-                      <div class="error-hint" id="err-member2RegNo">Member 2 Uucms number is required.</div>
+                      <label class="form-label" for="member2RegNo"
+                        >Uucms number <span class="req">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="member2RegNo"
+                        name="member2RegNo"
+                        placeholder="Uucms number"
+                        required
+                        maxlength="40"
+                      />
+                      <div class="error-hint" id="err-member2RegNo">
+                        Member 2 Uucms number is required.
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -4695,19 +5004,51 @@
                 <!-- Member 3 (Shown if Team Size >= 3) -->
                 <div class="member-subcard hidden-member" id="cardMember3">
                   <div class="member-card-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                    </svg>
                     <span>Team Member 3</span>
                   </div>
                   <div class="form-grid-2col">
                     <div class="form-group">
-                      <label class="form-label" for="member3Name">Full Name <span class="req">*</span></label>
-                      <input type="text" class="form-input" id="member3Name" name="member3Name" placeholder="Full Name" maxlength="80" />
-                      <div class="error-hint" id="err-member3Name">Member 3 full name is required.</div>
+                      <label class="form-label" for="member3Name"
+                        >Full Name <span class="req">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="member3Name"
+                        name="member3Name"
+                        placeholder="Full Name"
+                        maxlength="80"
+                      />
+                      <div class="error-hint" id="err-member3Name">
+                        Member 3 full name is required.
+                      </div>
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="member3RegNo">Registration No. <span class="req">*</span></label>
-                      <input type="text" class="form-input" id="member3RegNo" name="member3RegNo" placeholder="College Reg No." maxlength="40" />
-                      <div class="error-hint" id="err-member3RegNo">Member 3 registration number is required.</div>
+                      <label class="form-label" for="member3RegNo"
+                        >Registration No. <span class="req">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="member3RegNo"
+                        name="member3RegNo"
+                        placeholder="College Reg No."
+                        maxlength="40"
+                      />
+                      <div class="error-hint" id="err-member3RegNo">
+                        Member 3 registration number is required.
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -4715,49 +5056,123 @@
                 <!-- Member 4 (Shown if Team Size == 4) -->
                 <div class="member-subcard hidden-member" id="cardMember4">
                   <div class="member-card-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                    </svg>
                     <span>Team Member 4</span>
                   </div>
                   <div class="form-grid-2col">
                     <div class="form-group">
-                      <label class="form-label" for="member4Name">Full Name <span class="req">*</span></label>
-                      <input type="text" class="form-input" id="member4Name" name="member4Name" placeholder="Full Name" maxlength="80" />
-                      <div class="error-hint" id="err-member4Name">Member 4 full name is required.</div>
+                      <label class="form-label" for="member4Name"
+                        >Full Name <span class="req">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="member4Name"
+                        name="member4Name"
+                        placeholder="Full Name"
+                        maxlength="80"
+                      />
+                      <div class="error-hint" id="err-member4Name">
+                        Member 4 full name is required.
+                      </div>
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="member4RegNo">Registration No. <span class="req">*</span></label>
-                      <input type="text" class="form-input" id="member4RegNo" name="member4RegNo" placeholder="College Reg No." maxlength="40" />
-                      <div class="error-hint" id="err-member4RegNo">Member 4 registration number is required.</div>
+                      <label class="form-label" for="member4RegNo"
+                        >Registration No. <span class="req">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-input"
+                        id="member4RegNo"
+                        name="member4RegNo"
+                        placeholder="College Reg No."
+                        maxlength="40"
+                      />
+                      <div class="error-hint" id="err-member4RegNo">
+                        Member 4 registration number is required.
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- Final Confirmation Checkbox -->
                 <div class="confirmation-checkbox-wrap" id="confirmWrap">
-                  <input type="checkbox" id="confirmAccuracy" name="confirmAccuracy" required />
+                  <input
+                    type="checkbox"
+                    id="confirmAccuracy"
+                    name="confirmAccuracy"
+                    required
+                  />
                   <label for="confirmAccuracy">
-                    I confirm that our team has 2–4 students and the information provided is accurate.
+                    I confirm that our team has 2–4 students and the information
+                    provided is accurate.
                   </label>
                 </div>
-                <div class="error-hint" id="err-confirmAccuracy" style="margin-top:-0.8rem; margin-bottom:1.4rem;">You must confirm this declaration before submitting.</div>
+                <div
+                  class="error-hint"
+                  id="err-confirmAccuracy"
+                  style="margin-top: -0.8rem; margin-bottom: 1.4rem"
+                >
+                  You must confirm this declaration before submitting.
+                </div>
 
                 <div class="form-actions-row">
                   <button type="button" class="btn-back-step" id="btnBackStep">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
                     <span>Back to Team Details</span>
                   </button>
 
-                  <button type="submit" class="btn-submit-cyber" id="btnSubmitRegistration">
+                  <button
+                    type="submit"
+                    class="btn-submit-cyber"
+                    id="btnSubmitRegistration"
+                  >
                     <span class="cyber-spinner" id="submitSpinner"></span>
-                    <span class="btn-text-content" id="submitBtnText">Confirm & Submit Registration</span>
-                    <svg id="submitRocketIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span class="btn-text-content" id="submitBtnText"
+                      >Confirm & Submit Registration</span
+                    >
+                    <svg
+                      id="submitRocketIcon"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      />
+                    </svg>
                   </button>
                 </div>
               </div>
             </form>
 
-            <div class="portal-note" style="text-align:center;">
-              <span>⚡ IMARTICUS DATATHON 2026 • Conducted by SoIT on 14 October 2026 • 100% Free Entry</span>
+            <div class="portal-note" style="text-align: center">
+              <span
+                >⚡ IMARTICUS DATATHON 2026 • Conducted by SoIT on 14 October
+                2026 • 100% Free Entry</span
+              >
             </div>
           </div>
         </div>
@@ -4765,35 +5180,82 @@
     </section>
 
     <!-- Registration Success Modal Dialog -->
-    <div class="reg-modal-backdrop" id="regSuccessModal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <div
+      class="reg-modal-backdrop"
+      id="regSuccessModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="successTitle"
+    >
       <div class="reg-modal-card">
         <div class="reg-modal-icon-wrap">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+          >
             <polyline points="20 6 9 17 4 12" />
           </svg>
         </div>
-        <h3 class="reg-modal-title" id="successTitle">✓ Registration Successful</h3>
+        <h3 class="reg-modal-title" id="successTitle">
+          ✓ Registration Successful
+        </h3>
         <p class="reg-modal-sub">
-          Thank you for registering for <strong>IMARTICUS DATATHON 2026</strong>.<br />
-          Your team’s spot on the competition floor has been officially reserved.
+          Thank you for registering for
+          <strong>IMARTICUS DATATHON 2026</strong>.<br />
+          Your team’s spot on the competition floor has been officially
+          reserved.
         </p>
 
         <div class="reg-id-box">
           <div class="reg-id-label">OFFICIAL REGISTRATION IDENTIFIER</div>
           <div class="reg-id-val" id="modalRegId">REG-2026-0001</div>
-          <div class="reg-modal-team">Team: <strong id="modalTeamName" style="color:#ffffff;">Team Alpha</strong></div>
+          <div class="reg-modal-team">
+            Team:
+            <strong id="modalTeamName" style="color: #ffffff"
+              >Team Alpha</strong
+            >
+          </div>
           <button type="button" class="btn-copy-id" id="copyRegIdBtn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+              <path
+                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+              />
+            </svg>
             <span id="copyBtnText">Copy Registration ID</span>
           </button>
         </div>
 
-        <p style="font-size:0.85rem; color:var(--text-dim); margin-bottom:1.5rem; line-height:1.5;">
-          Event Date: <strong>14 October 2026</strong> • Venue: Offline on campus.<br />
+        <p
+          style="
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+          "
+        >
+          Event Date: <strong>14 October 2026</strong> • Venue: Offline on
+          campus.<br />
           Please save your Registration ID for check-in on the event day.
         </p>
 
-        <button type="button" class="btn-submit-cyber" id="closeSuccessModalBtn" style="width:100%; justify-content:center;">
+        <button
+          type="button"
+          class="btn-submit-cyber"
+          id="closeSuccessModalBtn"
+          style="width: 100%; justify-content: center"
+        >
           Back to Event
         </button>
       </div>
@@ -5016,12 +5478,13 @@
         // Taglines for the hero cycling typewriter
         taglines: ["Analyse.", "Visualise.", "Present.", "Win."],
         taglineSpeedMs: 2200,
-
       };
 
       // Direct all registration CTA links smoothly to the on-page registration portal
       function setupRegistrationScrollLinks() {
-        const regButtons = document.querySelectorAll(".google-form-btn, a[href='#register']");
+        const regButtons = document.querySelectorAll(
+          ".google-form-btn, a[href='#register']",
+        );
         regButtons.forEach((btn) => {
           btn.removeAttribute("target");
           btn.removeAttribute("rel");
@@ -5634,7 +6097,9 @@
         const modalTeamName = document.getElementById("modalTeamName");
         const copyRegIdBtn = document.getElementById("copyRegIdBtn");
         const copyBtnText = document.getElementById("copyBtnText");
-        const closeSuccessModalBtn = document.getElementById("closeSuccessModalBtn");
+        const closeSuccessModalBtn = document.getElementById(
+          "closeSuccessModalBtn",
+        );
 
         // Dynamic Teammate Cards
         const cardMember2 = document.getElementById("cardMember2");
@@ -5644,7 +6109,8 @@
         // Inputs & Chips
         const selectedCourseInput = document.getElementById("selectedCourse");
         const selectedYearInput = document.getElementById("selectedYear");
-        const selectedTeamSizeInput = document.getElementById("selectedTeamSize");
+        const selectedTeamSizeInput =
+          document.getElementById("selectedTeamSize");
 
         // Setup Chip Selectors
         function bindChipGroup(containerId, hiddenInput, onSelectCallback) {
@@ -5657,7 +6123,9 @@
               chip.classList.add("selected");
               const val = chip.getAttribute("data-value");
               hiddenInput.value = val;
-              hideError("err-" + hiddenInput.id.replace("selected", "").toLowerCase());
+              hideError(
+                "err-" + hiddenInput.id.replace("selected", "").toLowerCase(),
+              );
               if (onSelectCallback) onSelectCallback(val);
             });
           });
@@ -5726,8 +6194,17 @@
 
         // Input change cleanup
         [
-          "teamName", "leaderName", "leaderRegNo", "leaderEmail", "leaderPhone",
-          "member2Name", "member2RegNo", "member3Name", "member3RegNo", "member4Name", "member4RegNo"
+          "teamName",
+          "leaderName",
+          "leaderRegNo",
+          "leaderEmail",
+          "leaderPhone",
+          "member2Name",
+          "member2RegNo",
+          "member3Name",
+          "member3RegNo",
+          "member4Name",
+          "member4RegNo",
         ].forEach((id) => {
           const el = document.getElementById(id);
           if (el) {
@@ -5750,19 +6227,22 @@
           if (!selectedCourseInput.value) {
             showError("err-course");
             isValid = false;
-            if (!firstInvalid) firstInvalid = document.getElementById("courseChips");
+            if (!firstInvalid)
+              firstInvalid = document.getElementById("courseChips");
           }
 
           if (!selectedYearInput.value) {
             showError("err-year");
             isValid = false;
-            if (!firstInvalid) firstInvalid = document.getElementById("yearChips");
+            if (!firstInvalid)
+              firstInvalid = document.getElementById("yearChips");
           }
 
           if (!selectedTeamSizeInput.value) {
             showError("err-teamSize");
             isValid = false;
-            if (!firstInvalid) firstInvalid = document.getElementById("teamSizeChips");
+            if (!firstInvalid)
+              firstInvalid = document.getElementById("teamSizeChips");
           }
 
           const leaderName = document.getElementById("leaderName");
@@ -5789,15 +6269,22 @@
 
           const leaderPhone = document.getElementById("leaderPhone");
           const phoneDigits = leaderPhone.value.replace(/\D/g, "");
-          const isPhoneValid = (phoneDigits.length === 10 && /^[6-9]\d{9}$/.test(phoneDigits)) ||
-                               (phoneDigits.length === 12 && phoneDigits.startsWith("91") && /^[6-9]\d{9}$/.test(phoneDigits.slice(2)));
+          const isPhoneValid =
+            (phoneDigits.length === 10 && /^[6-9]\d{9}$/.test(phoneDigits)) ||
+            (phoneDigits.length === 12 &&
+              phoneDigits.startsWith("91") &&
+              /^[6-9]\d{9}$/.test(phoneDigits.slice(2)));
           if (!isPhoneValid) {
             showError("err-leaderPhone", "leaderPhone");
             isValid = false;
             if (!firstInvalid) firstInvalid = leaderPhone;
           }
 
-          if (!isValid && firstInvalid && typeof firstInvalid.focus === "function") {
+          if (
+            !isValid &&
+            firstInvalid &&
+            typeof firstInvalid.focus === "function"
+          ) {
             firstInvalid.focus();
           }
 
@@ -5812,7 +6299,9 @@
             stepPill1.classList.remove("active");
             stepPill1.classList.add("completed");
             stepPill2.classList.add("active");
-            document.getElementById("reg-portal-container").scrollIntoView({ behavior: "smooth", block: "start" });
+            document
+              .getElementById("reg-portal-container")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
           }
         });
 
@@ -5822,7 +6311,9 @@
           stepPill2.classList.remove("active");
           stepPill1.classList.remove("completed");
           stepPill1.classList.add("active");
-          document.getElementById("reg-portal-container").scrollIntoView({ behavior: "smooth", block: "start" });
+          document
+            .getElementById("reg-portal-container")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
         });
 
         // Step 2 Validation
@@ -5830,7 +6321,10 @@
           let isValid = true;
           let firstInvalid = null;
           const teamSize = parseInt(selectedTeamSizeInput.value, 10);
-          const leaderRegNo = document.getElementById("leaderRegNo").value.trim().toLowerCase();
+          const leaderRegNo = document
+            .getElementById("leaderRegNo")
+            .value.trim()
+            .toLowerCase();
           const usedRegNos = new Set([leaderRegNo]);
 
           // Member 2
@@ -5849,7 +6343,8 @@
             const cleanReg = m2Reg.value.trim().toLowerCase();
             if (usedRegNos.has(cleanReg)) {
               showError("err-member2RegNo", "member2RegNo");
-              document.getElementById("err-member2RegNo").textContent = "Duplicate registration number inside team.";
+              document.getElementById("err-member2RegNo").textContent =
+                "Duplicate registration number inside team.";
               isValid = false;
               if (!firstInvalid) firstInvalid = m2Reg;
             } else {
@@ -5874,7 +6369,8 @@
               const cleanReg = m3Reg.value.trim().toLowerCase();
               if (usedRegNos.has(cleanReg)) {
                 showError("err-member3RegNo", "member3RegNo");
-                document.getElementById("err-member3RegNo").textContent = "Duplicate registration number inside team.";
+                document.getElementById("err-member3RegNo").textContent =
+                  "Duplicate registration number inside team.";
                 isValid = false;
                 if (!firstInvalid) firstInvalid = m3Reg;
               } else {
@@ -5900,7 +6396,8 @@
               const cleanReg = m4Reg.value.trim().toLowerCase();
               if (usedRegNos.has(cleanReg)) {
                 showError("err-member4RegNo", "member4RegNo");
-                document.getElementById("err-member4RegNo").textContent = "Duplicate registration number inside team.";
+                document.getElementById("err-member4RegNo").textContent =
+                  "Duplicate registration number inside team.";
                 isValid = false;
                 if (!firstInvalid) firstInvalid = m4Reg;
               } else {
@@ -5919,7 +6416,11 @@
             hideError("err-confirmAccuracy");
           }
 
-          if (!isValid && firstInvalid && typeof firstInvalid.focus === "function") {
+          if (
+            !isValid &&
+            firstInvalid &&
+            typeof firstInvalid.focus === "function"
+          ) {
             firstInvalid.focus();
           }
 
@@ -5941,7 +6442,10 @@
           // Bot honeypot check
           const honeypotVal = document.getElementById("regHoneypot").value;
           if (honeypotVal) {
-            showSuccessModal("REG-2026-9999", document.getElementById("teamName").value);
+            showSuccessModal(
+              "REG-2026-9999",
+              document.getElementById("teamName").value,
+            );
             return;
           }
 
@@ -5960,14 +6464,14 @@
           // Collect Member 2
           members.push({
             name: document.getElementById("member2Name").value.trim(),
-            regNo: document.getElementById("member2RegNo").value.trim()
+            regNo: document.getElementById("member2RegNo").value.trim(),
           });
 
           // Collect Member 3
           if (teamSize >= 3) {
             members.push({
               name: document.getElementById("member3Name").value.trim(),
-              regNo: document.getElementById("member3RegNo").value.trim()
+              regNo: document.getElementById("member3RegNo").value.trim(),
             });
           }
 
@@ -5975,7 +6479,7 @@
           if (teamSize === 4) {
             members.push({
               name: document.getElementById("member4Name").value.trim(),
-              regNo: document.getElementById("member4RegNo").value.trim()
+              regNo: document.getElementById("member4RegNo").value.trim(),
             });
           }
 
@@ -5988,11 +6492,15 @@
             leaderEmail: document.getElementById("leaderEmail").value.trim(),
             leaderPhone: document.getElementById("leaderPhone").value.trim(),
             teamSize: teamSize,
-            members: members
+            members: members,
           };
 
           // Generate Unique Idempotency Key
-          const idempotencyKey = "IDEMP-" + Date.now() + "-" + Math.random().toString(36).substring(2, 9);
+          const idempotencyKey =
+            "IDEMP-" +
+            Date.now() +
+            "-" +
+            Math.random().toString(36).substring(2, 9);
 
           // Disable submit button & show cyber loading state
           btnSubmit.disabled = true;
@@ -6007,10 +6515,10 @@
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
-                "X-Idempotency-Key": idempotencyKey
+                "X-Idempotency-Key": idempotencyKey,
               },
               body: JSON.stringify(payload),
-              signal: controller.signal
+              signal: controller.signal,
             });
 
             clearTimeout(timeoutId);
@@ -6020,8 +6528,12 @@
               showSuccessModal(data.registration_id, payload.teamName);
               regForm.reset();
               // Reset chips to default 2
-              document.querySelectorAll(".chip-btn").forEach((c) => c.classList.remove("selected"));
-              const defaultSizeChip = document.querySelector('#teamSizeChips [data-value="2"]');
+              document
+                .querySelectorAll(".chip-btn")
+                .forEach((c) => c.classList.remove("selected"));
+              const defaultSizeChip = document.querySelector(
+                '#teamSizeChips [data-value="2"]',
+              );
               if (defaultSizeChip) defaultSizeChip.classList.add("selected");
               selectedTeamSizeInput.value = "2";
               updateTeamSizeCards(2);
@@ -6033,14 +6545,21 @@
               stepPill1.classList.remove("completed");
               stepPill1.classList.add("active");
             } else {
-              showBannerError(data.message || "Registration failed. Please check your information and try again.");
+              showBannerError(
+                data.message ||
+                  "Registration failed. Please check your information and try again.",
+              );
             }
           } catch (err) {
             console.error("[Submission error]", err);
             if (err.name === "AbortError") {
-              showBannerError("Request timed out. Please check your internet connection and try submitting again.");
+              showBannerError(
+                "Request timed out. Please check your internet connection and try submitting again.",
+              );
             } else {
-              showBannerError("Unable to reach the registration gateway. Please verify your connection or try again shortly.");
+              showBannerError(
+                "Unable to reach the registration gateway. Please verify your connection or try again shortly.",
+              );
             }
           } finally {
             btnSubmit.disabled = false;
@@ -6052,7 +6571,10 @@
         function showBannerError(msg) {
           regErrorMessage.textContent = msg;
           regErrorBanner.classList.add("visible");
-          regErrorBanner.scrollIntoView({ behavior: "smooth", block: "center" });
+          regErrorBanner.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
         }
 
         function showSuccessModal(regId, teamName) {
